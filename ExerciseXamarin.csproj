@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Common\Common.cs" />
+    <Compile Remove="Views\Exercise10Page.xaml.cs" />
+    <Compile Remove="Views\Exercise9Page.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Views\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Services\" />
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Exercise1Page.xaml" />
+    <EmbeddedResource Remove="MenuPage.xaml" />
+    <EmbeddedResource Remove="Views\Exercise9Page.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Exercise1Page.xaml.cs">
+      <DependentUpon>Exercise1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Exercise2Page.xaml.cs">
+      <DependentUpon>Exercise2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Exercise3Page.xaml.cs">
+      <DependentUpon>Exercise3Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Exercise4Page.xaml.cs">
+      <DependentUpon>Exercise4Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Exercise5Page.xaml.cs">
+      <DependentUpon>Exercise5Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Exercise6Page.xaml.cs">
+      <DependentUpon>Exercise6Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Exercise7Page.xaml.cs">
+      <DependentUpon>Exercise7Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Exercise8Page.xaml.cs">
+      <DependentUpon>Exercise8Page.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

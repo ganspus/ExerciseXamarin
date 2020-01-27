@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    Title="Exercise 1"
+    Padding="10,50,10,0"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ExerciseXamarin.Views.Exercise1Page">
+   <StackLayout BindingContext="{x:Reference slider}">
+       <Label Text="{Binding Value,
+           StringFormat='Font Size : {0:N0}'}"/>
+       <Slider x:Name="slider" Maximum="50" Minimum="16"/>
+       <Label Text="Ganis Puspita H" FontSize="{Binding Value}"/>
+   </StackLayout>
+</ContentPage>
+       

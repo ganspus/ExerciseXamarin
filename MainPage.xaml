@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    NavigationPage.HasNavigationBar="False"
+    Padding="0,50,0,0"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    x:Class="ExerciseXamarin.MainPage">
+    <StackLayout>
+
+        <ic:CircleImage Source="http://placekitten.com/400/300"
+                        WidthRequest="200"
+			            HeightRequest="200"
+			            Aspect="AspectFill"
+			            HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"/>
+
+        <Label Text="Welcome to Xamarin.Exercise!"
+               HorizontalOptions="Center"
+               VerticalOptions="FillAndExpand"/>
+
+        <Button
+            BackgroundColor="DarkBlue"
+            TextColor="White"
+            Text="Click Me"
+            FontAttributes="Bold"
+            Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
