@@ -1,19 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage
     Title="Exercise 2"
-    Padding="10,50,10,0"
-    BackgroundColor="Black"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ExerciseXamarin.Views.Exercise2Page">
     <AbsoluteLayout>
         <Image x:Name="image"
                AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
-        <ActivityIndicator Color="White" IsRunning="{Binding Source={x:Reference image},Path=IsLoading}"
+        <ActivityIndicator Color="Black" IsRunning="{Binding Source={x:Reference image},Path=IsLoading}"
                AbsoluteLayout.LayoutBounds="0.5,0.05,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-        <Button ImageSource="left.png" Clicked="Left_Clicked"
+        <Button ImageSource="left.png" Clicked="Left_Clicked" BackgroundColor="Gray"
                 AbsoluteLayout.LayoutBounds="0.05,0.05,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-        <Button ImageSource="right.png" Clicked="Right_Clicked"
+        <Button ImageSource="right.png" Clicked="Right_Clicked" BackgroundColor="Gray"
                 AbsoluteLayout.LayoutBounds="0.95,0.05,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 </ContentPage>
