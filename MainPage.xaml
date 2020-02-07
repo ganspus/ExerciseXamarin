@@ -13,7 +13,7 @@
 			            HeightRequest="200"
 			            Aspect="AspectFill"
 			            HorizontalOptions="Center"
-                        VerticalOptions="CenterAndExpand"/>
+                        VerticalOptions="Center"/>
 
         <Label Text="Welcome to Xamarin.Exercise!"
                HorizontalOptions="Center"
